@@ -11,7 +11,7 @@ import org.jsoup.nodes.Document;
 
 public class HTMLWordsArray {
 		
-		public String[] getHTMLArray(String url) throws IOException { 
+	public String[] getHTMLArray(String url) throws IOException { 
 		
 		String[] htmlArray;  
 		
