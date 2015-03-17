@@ -10,7 +10,6 @@ import java.util.LinkedList;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
-import main.BinarySearch;
 
 public class BinarySearchTest {
 	BinarySearch binarySearch = new BinarySearch();

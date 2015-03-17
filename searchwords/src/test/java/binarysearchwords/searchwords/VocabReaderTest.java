@@ -8,8 +8,6 @@ import java.util.Scanner;
 import org.junit.Before;
 import org.junit.Test;
 
-import main.VocabReader;
-
 public class VocabReaderTest {
 	private VocabReader vocabReader = null;
 
