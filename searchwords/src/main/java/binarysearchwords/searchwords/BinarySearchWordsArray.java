@@ -2,7 +2,6 @@ package binarysearchwords.searchwords;
 import java.util.*; 
 
 public class BinarySearchWordsArray {
-	VocabReader vr = new VocabReader(); 
 
 	public HashSet<String> getMatchedWordsArray(String[] array) { //array you want to use values of as key
 		

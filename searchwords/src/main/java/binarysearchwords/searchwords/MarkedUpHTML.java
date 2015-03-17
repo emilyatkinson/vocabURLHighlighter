@@ -1,11 +1,7 @@
 package binarysearchwords.searchwords;
 
-import java.util.ArrayList;
 import java.util.HashSet;
-
 import org.jsoup.nodes.Document;
-import org.jsoup.nodes.Element;
-import org.jsoup.select.Elements;
 
 public class MarkedUpHTML {
 	
@@ -13,14 +9,15 @@ public class MarkedUpHTML {
 		
 		String documentString = doc.toString(); 
 		
-		
-		
 		for (String matched : matches) {
 			String highlightedWord = new StringBuilder().append("<mark>").append(matched).
 					append("</mark>").toString();
-			documentString = documentString.replaceAll(matched, highlightedWord);
+			String matchWord = new StringBuilder().append("\\b").append(matched).append("\\b").toString();  
+			documentString = documentString.replaceAll(matchWord, highlightedWord);
+			
 		
 		}
 		return documentString;
+	}
 }
-}
+	

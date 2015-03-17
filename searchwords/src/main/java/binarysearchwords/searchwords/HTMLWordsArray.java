@@ -13,9 +13,9 @@ public class HTMLWordsArray {
 		
 		public String[] getHTMLArray(String url) throws IOException { 
 		
-		Document doc = Jsoup.connect(url).get();
 		String[] htmlArray;  
 		
+		Document doc = Jsoup.connect(url).get();
 		String contents = doc.html();
 
 		contents = contents.toLowerCase(); 
@@ -30,43 +30,3 @@ public class HTMLWordsArray {
 
 	} 
 
-
-
-//	public String[] htmlArray;
-
-	
-//	public static void main(String[] args) {
-//		public String[] htmlArray;
-//
-//		 Document doc = Jsoup.connect(urlString).get();
-//		
-//		 String contents = doc.body().text();
-//		
-//		 contents = contents.toLowerCase();
-//		 contents = contents.replaceAll("[^a-z]", " ").trim();
-//		
-//		 List<String> htmlList = Arrays.asList(text.split("\\s+"));
-//		 List<String> list = new ArrayList<String>();
-//		 htmlArray = htmlList.toArray(new String[0]);
-//		
-//		 for (String stuff : htmlArray) {
-//		 System.out.println(stuff);
-//		 }
-//		
-//	}
-
-//	public void htmlWordsArray() {
-//		
-//		String[] htmlArray;
-//		Document doc = (Document) Jsoup.connect(URLReader.getUrl());//.get();
-//
-//		String contents = doc.body().text();
-//
-//		contents = contents.toLowerCase();
-//		contents = contents.replaceAll("[^a-z]", " ").trim();
-//
-//		List<String> htmlList = Arrays.asList(text.split("\\s+"));
-//		List<String> list = new ArrayList<String>();
-//		htmlArray = htmlList.toArray(new String[0]);
-//	}
-//}

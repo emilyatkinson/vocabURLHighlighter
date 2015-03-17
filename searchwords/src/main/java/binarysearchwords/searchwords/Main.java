@@ -43,6 +43,7 @@ public class Main {
 			
 			String markedUpDoc = muh.markup(matchingWords, html);
 			
+			
 			WriteFile.writeToFile(urlstring, markedUpDoc, count);
 			
 			count++;

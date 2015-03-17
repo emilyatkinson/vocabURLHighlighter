@@ -12,18 +12,6 @@ public static void main(String[] args) {
 	static List<String> words = new ArrayList<String>();
 	static String token1;
 
-	// public static void main(String[] args) throws IOException {
-	//
-	// populateArray();
-	//
-	// //printWords();
-	// // List<String> words = new ArrayList<String>();
-	// // populateArray(vocabReader, inFile1, words);
-	// // System.out.println(wordsArray[wordsArray.length -1]);
-	// // System.out.println(wordsArray[0]);
-	// // System.out.println(getWordsArray(0));
-	// }
-
 	public static String[] populateArray() {
 		Scanner inFile = openFileForReading();
 
